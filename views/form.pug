@@ -1,0 +1,76 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Student Application Form
+  link(rel='stylesheet' href='/styles/styles.css')
+.container
+  .form-left
+    img(src='ciu-logo.png' alt='Clarke International University Logo')
+  .form-right
+    h2 Student Application Form
+    form
+      .form-row
+        .form-group
+          label(for='firstName')
+            | First Name 
+            span *
+          input#firstName(type='text' name='firstName' required='')
+        .form-group
+          label(for='lastName')
+            | Last Name 
+            span *
+          input#lastName(type='text' name='lastName' required='')
+      .form-row
+        .form-group
+          label(for='course')
+            | Course 
+            span *
+          select#course(name='course' required='')
+            option(value='') -- Select --
+            // Add more options as needed
+        .form-group
+          label(for='entryScheme')
+            | Entry Scheme 
+            span *
+          select#entryScheme(name='entryScheme' required='')
+            option(value='') -- Select --
+            // Add more options as needed
+      .form-row
+        .form-group
+          label(for='intake')
+            | Intake 
+            span *
+          select#intake(name='intake' required='')
+            option(value='') -- Select --
+            // Add more options as needed
+        .form-group
+          label(for='sponsorship')
+            | Sponsorship 
+            span *
+          select#sponsorship(name='sponsorship' required='')
+            option(value='') -- Select --
+            // Add more options as needed
+      .form-row
+        label
+          | Gender 
+          span *
+        .form-group
+          input#male(type='radio' name='gender' value='male' required='')
+          label(for='male') Male
+          input#female(type='radio' name='gender' value='female' required='')
+          label(for='female') Female
+      .form-row
+        .form-group
+          label(for='dob')
+            | Date of Birth 
+            span *
+          input#dob(type='date' name='dob' required='')
+        .form-group
+          label(for='residence')
+            | Residence 
+            span *
+          input#residence(type='text' name='residence' required='')
+      .form-row
+        button(type='submit') Submit
+        script(src="/js/script.js/")

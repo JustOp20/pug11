@@ -1,0 +1,21 @@
+{
+  "name": "form",
+  "version": "1.0.0",
+  "description": "form for clarke Univ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "form1"
+  ],
+  "author": "\"pabby\"",
+  "license": "ISC",
+  "dependencies": {
+    "body": "^5.1.0",
+    "express": "^4.20.0",
+    "parser": "^0.1.4",
+    "pug": "^3.0.3",
+    "session": "^0.1.0"
+  }
+}
